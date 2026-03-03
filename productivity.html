@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Zahzouh — Productivity system. Calendar, tracking, daily routines, and focus metrics.">
+    <title>Productivity — Zahzouh</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+
+        <!-- ========== NAVIGATION ========== -->
+        <nav class="nav" id="main-nav">
+            <div class="container nav__inner">
+                <a href="index.html" class="nav__logo"><span>&lt;/&gt;</span> Zahzouh</a>
+                <div class="nav__links" id="nav-links">
+                    <a href="index.html" class="nav__link">Home</a>
+                    <a href="dashboard.html" class="nav__link">Dashboard</a>
+                    <a href="projects.html" class="nav__link">Projects</a>
+                    <a href="productivity.html" class="nav__link">Productivity</a>
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                        <span class="theme-toggle__icon">☀️</span>
+                    </button>
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="Open menu">
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- ========== MAIN CONTENT ========== -->
+        <main style="padding-top: calc(var(--nav-height) + var(--sp-8));">
+
+            <!-- Embeds Section -->
+            <section class="section" id="embeds" style="padding-top: var(--sp-8);">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <p class="section-header__eyebrow">Systems</p>
+                        <h1 class="section-header__title">Productivity</h1>
+                        <p class="section-header__subtitle">Tracking tools, daily structure, and focus analytics.</p>
+                    </div>
+
+                    <div class="grid grid-2 reveal">
+                        <!-- Google Calendar Embed -->
+                        <div class="embed-wrapper">
+                            <h3 class="card__title mb-4">📅 Calendar</h3>
+                            <iframe src="about:blank" title="Google Calendar"
+                                style="min-height: 400px; background: var(--bg-secondary); border-radius: var(--radius-md);"></iframe>
+                            <p class="text-sm text-muted mt-2">Replace the iframe <code>src</code> with your Google
+                                Calendar embed URL.</p>
+                        </div>
+
+                        <!-- Google Sheets Embed -->
+                        <div class="embed-wrapper">
+                            <h3 class="card__title mb-4">📊 Tracking Sheet</h3>
+                            <iframe src="about:blank" title="Google Sheets"
+                                style="min-height: 400px; background: var(--bg-secondary); border-radius: var(--radius-md);"></iframe>
+                            <p class="text-sm text-muted mt-2">Replace the iframe <code>src</code> with your Google
+                                Sheets embed URL.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Daily Routine -->
+            <section class="section" id="routine">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <p class="section-header__eyebrow">Structure</p>
+                        <h2 class="section-header__title">Daily Routine</h2>
+                        <p class="section-header__subtitle">Discipline is the bridge between goals and accomplishment.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-2 reveal">
+                        <div class="card">
+                            <h3 class="card__title mb-4">🌅 Morning Block</h3>
+                            <div class="timeline">
+                                <div class="timeline__item">
+                                    <div class="timeline__time">06:00</div>
+                                    <div class="timeline__content">
+                                        <h4>Wake Up & Prepare</h4>
+                                        <p>Cold water, prayer, light stretching</p>
+                                    </div>
+                                </div>
+                                <div class="timeline__item">
+                                    <div class="timeline__time">06:30</div>
+                                    <div class="timeline__content">
+                                        <h4>Deep Work — Session 1</h4>
+                                        <p>Focused coding or research (no distractions)</p>
+                                    </div>
+                                </div>
+                                <div class="timeline__item">
+                                    <div class="timeline__time">09:00</div>
+                                    <div class="timeline__content">
+                                        <h4>Breakfast & Review</h4>
+                                        <p>Meal prep, review daily goals</p>
+                                    </div>
+                                </div>
+                                <div class="timeline__item">
+                                    <div class="timeline__time">09:30</div>
+                                    <div class="timeline__content">
+                                        <h4>University / Lectures</h4>
+                                        <p>Attend classes, take structured notes</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <h3 class="card__title mb-4">🌙 Afternoon & Evening</h3>
+                            <div class="timeline">
+                                <div class="timeline__item">
+                                    <div class="timeline__time">14:00</div>
+                                    <div class="timeline__content">
+                                        <h4>Deep Work — Session 2</h4>
+                                        <p>Project implementation, debugging, PRs</p>
+                                    </div>
+                                </div>
+                                <div class="timeline__item">
+                                    <div class="timeline__time">17:00</div>
+                                    <div class="timeline__content">
+                                        <h4>Physical Training</h4>
+                                        <p>Gym / cardio — 60-90 min session</p>
+                                    </div>
+                                </div>
+                                <div class="timeline__item">
+                                    <div class="timeline__time">19:00</div>
+                                    <div class="timeline__content">
+                                        <h4>Light Work & Learning</h4>
+                                        <p>Reading papers, documentation, skill building</p>
+                                    </div>
+                                </div>
+                                <div class="timeline__item">
+                                    <div class="timeline__time">22:00</div>
+                                    <div class="timeline__content">
+                                        <h4>Wind Down & Reflect</h4>
+                                        <p>Journal, plan tomorrow, screen off by 23:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Weekly Review -->
+            <section class="section" id="weekly-review">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <p class="section-header__eyebrow">Reflection</p>
+                        <h2 class="section-header__title">Weekly Review</h2>
+                    </div>
+
+                    <div class="grid grid-3 reveal">
+                        <div class="card">
+                            <div class="kpi-card__icon">📝</div>
+                            <h3 class="card__title">What Went Well</h3>
+                            <p class="card__description mt-2">
+                                Review accomplishments, shipped features, learning milestones, and personal wins from
+                                the past week.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <div class="kpi-card__icon">🔧</div>
+                            <h3 class="card__title">What Needs Improvement</h3>
+                            <p class="card__description mt-2">
+                                Identify bottlenecks, time wasters, broken habits, and areas where focus drifted during
+                                the week.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <div class="kpi-card__icon">🎯</div>
+                            <h3 class="card__title">Next Week's Focus</h3>
+                            <p class="card__description mt-2">
+                                Set 3 key priorities. Define specific deliverables. Allocate deep work blocks in
+                                advance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Productivity Charts -->
+            <section class="section" id="charts">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <p class="section-header__eyebrow">Analytics</p>
+                        <h2 class="section-header__title">Focus Metrics</h2>
+                    </div>
+
+                    <div class="grid grid-2 reveal">
+                        <!-- Bar Chart: Weekly Deep Work -->
+                        <div class="chart-container">
+                            <h3 class="card__title mb-4">Weekly Deep Work Hours</h3>
+                            <canvas id="weekly-chart" data-chart="bar"></canvas>
+                        </div>
+
+                        <!-- Donut Chart: Time Distribution -->
+                        <div class="chart-container">
+                            <h3 class="card__title mb-4">Time Distribution</h3>
+                            <div style="display:flex;flex-direction:column;align-items:center;">
+                                <canvas id="distribution-chart" data-chart="donut"></canvas>
+                                <div class="chart-legend flex flex-wrap gap-4 mt-4" style="justify-content:center;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- ========== FOOTER ========== -->
+        <footer class="footer">
+            <div class="container footer__content">
+                <div class="footer__links">
+                    <a href="https://github.com/zahzouh" class="footer__link" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://linkedin.com/in/zahzouh" class="footer__link" target="_blank"
+                        rel="noopener">LinkedIn</a>
+                    <a href="mailto:contact@zahzouh.dev" class="footer__link">Email</a>
+                </div>
+                <p class="footer__copy">&copy; 2026 Zahzouh. Built with discipline.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/charts.js"></script>
+    <script>
+        /* ---- Draw charts once DOM is ready ---- */
+        document.addEventListener('DOMContentLoaded', function () {
+
+            /* Bar chart: weekly deep work hours */
+            Charts.drawBarChart('weekly-chart', {
+                title: '',
+                labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                data: [4.5, 5, 3.5, 6, 4, 2, 3]
+            });
+
+            /* Donut chart: time distribution */
+            Charts.drawDonutChart('distribution-chart', {
+                labels: ['Deep Work', 'University', 'Training', 'Learning', 'Rest'],
+                data: [35, 25, 10, 15, 15],
+                centerText: '100%'
+            });
+
+            /* Redraw on theme change */
+            var observer = new MutationObserver(function () {
+                Charts.drawBarChart('weekly-chart', {
+                    labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                    data: [4.5, 5, 3.5, 6, 4, 2, 3]
+                });
+                Charts.drawDonutChart('distribution-chart', {
+                    labels: ['Deep Work', 'University', 'Training', 'Learning', 'Rest'],
+                    data: [35, 25, 10, 15, 15],
+                    centerText: '100%'
+                });
+            });
+            observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+
+            /* Redraw on resize */
+            var resizeTimer;
+            window.addEventListener('resize', function () {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(function () {
+                    Charts.drawBarChart('weekly-chart', {
+                        labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                        data: [4.5, 5, 3.5, 6, 4, 2, 3]
+                    });
+                    Charts.drawDonutChart('distribution-chart', {
+                        labels: ['Deep Work', 'University', 'Training', 'Learning', 'Rest'],
+                        data: [35, 25, 10, 15, 15],
+                        centerText: '100%'
+                    });
+                }, 250);
+            });
+        });
+    </script>
+</body>
+
+</html>

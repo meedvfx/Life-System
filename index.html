@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zahzouh — AI Engineer & Tech Student. Personal productivity and engineering dashboard.">
+  <meta name="author" content="Zahzouh">
+  <meta name="keywords" content="AI Engineer, Machine Learning, Dashboard, Portfolio, Productivity">
+  <title>Zahzouh — AI Engineer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="nav" id="main-nav">
+      <div class="container nav__inner">
+        <a href="index.html" class="nav__logo">
+          <span>&lt;/&gt;</span> Zahzouh
+        </a>
+
+        <div class="nav__links" id="nav-links">
+          <a href="index.html" class="nav__link">Home</a>
+          <a href="dashboard.html" class="nav__link">Dashboard</a>
+          <a href="projects.html" class="nav__link">Projects</a>
+          <a href="productivity.html" class="nav__link">Productivity</a>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+            <span class="theme-toggle__icon">☀️</span>
+          </button>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero__content reveal">
+          <p class="hero__eyebrow">AI Engineer · Tech Student</p>
+          <h1 class="hero__title">
+            Hi, I'm <span class="highlight">Zahzouh</span>
+          </h1>
+          <p class="hero__subtitle">
+            Building intelligent systems at the intersection of deep learning,
+            cybersecurity, and engineering discipline. Focused on shipping
+            impactful projects with clean architecture.
+          </p>
+          <div class="hero__actions">
+            <a href="dashboard.html" class="btn btn--primary">
+              📊 Dashboard
+            </a>
+            <a href="projects.html" class="btn btn--outline">
+              🚀 Projects
+            </a>
+            <a href="productivity.html" class="btn btn--ghost">
+              ⚡ Productivity
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== ABOUT SNAPSHOT ========== -->
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-header text-center reveal">
+            <p class="section-header__eyebrow">Overview</p>
+            <h2 class="section-header__title">Engineering-Driven Approach</h2>
+            <p class="section-header__subtitle" style="margin-inline:auto;">
+              I treat every project like a system — structured, measured, and iterated. Here's a snapshot of how I operate.
+            </p>
+          </div>
+
+          <div class="grid grid-3 mt-8">
+            <!-- Card 1 -->
+            <div class="card reveal">
+              <div class="kpi-card__icon">🧠</div>
+              <h3 class="card__title">Deep Learning</h3>
+              <p class="card__description mt-2">
+                Transformers, autoencoders, and hybrid AI architectures for real-world network defense and classification.
+              </p>
+            </div>
+            <!-- Card 2 -->
+            <div class="card reveal">
+              <div class="kpi-card__icon">🛡️</div>
+              <h3 class="card__title">Cybersecurity</h3>
+              <p class="card__description mt-2">
+                Flow-based intrusion detection, anomaly scoring, and automated SOC reporting with production-ready pipelines.
+              </p>
+            </div>
+            <!-- Card 3 -->
+            <div class="card reveal">
+              <div class="kpi-card__icon">⚙️</div>
+              <h3 class="card__title">Systems Design</h3>
+              <p class="card__description mt-2">
+                Clean architecture, modular backends (FastAPI), and full-stack dashboards with real-time data visualization.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+      <div class="container footer__content">
+        <div class="footer__links">
+          <a href="https://github.com/zahzouh" class="footer__link" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com/in/zahzouh" class="footer__link" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:contact@zahzouh.dev" class="footer__link">Email</a>
+        </div>
+        <p class="footer__copy">&copy; 2026 Zahzouh. Built with discipline.</p>
+      </div>
+    </footer>
+
+  </div><!-- /page-wrapper -->
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
