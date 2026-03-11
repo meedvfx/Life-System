@@ -35,7 +35,7 @@ object DatabaseModule {
             "lifeos_encrypted.db"
         )
         .openHelperFactory(supportFactory)
-        .fallbackToDestructiveMigration()
+        .fallbackToDestructiveMigration(true)
         .build()
     }
 

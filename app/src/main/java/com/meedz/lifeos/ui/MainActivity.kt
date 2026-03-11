@@ -1,8 +1,9 @@
 package com.meedz.lifeos.ui
 
 import android.os.Bundle
-import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.fragment.app.FragmentActivity
+
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -15,7 +16,7 @@ import com.meedz.lifeos.ui.theme.LifeOSTheme
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class MainActivity : ComponentActivity() {
+class MainActivity : FragmentActivity() {
     @Inject lateinit var biometricAuthManager: BiometricAuthManager
 
     override fun onCreate(savedInstanceState: Bundle?) {

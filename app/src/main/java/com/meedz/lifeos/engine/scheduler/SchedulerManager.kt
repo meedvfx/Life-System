@@ -2,6 +2,7 @@ package com.meedz.lifeos.engine.scheduler
 
 import android.content.Context
 import androidx.work.*
+import dagger.hilt.android.qualifiers.ApplicationContext
 import java.util.Calendar
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject
@@ -9,7 +10,7 @@ import javax.inject.Singleton
 
 @Singleton
 class SchedulerManager @Inject constructor(
-    private val context: Context
+    @ApplicationContext private val context: Context
 ) {
     fun scheduleDailyReset() {
         val currentDate = Calendar.getInstance()
